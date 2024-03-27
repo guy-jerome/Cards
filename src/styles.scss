@@ -1,0 +1,53 @@
+$primary-color: #bbbdf6;
+$secondary-color: #9893da;
+$third-color: #797a9e;
+$background-color-primary: #72727e;
+$background-color-secondary: #625f63;
+$default-font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: $primary-color;
+  background-color: $background-color-primary;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 5px 3px $background-color-secondary;
+  color: $background-color-primary;
+  background-color: $primary-color;
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  height: 150px;
+  font-family: $default-font;
+  border-radius: 10px;
+}
+.card p {
+  margin-top: 3px;
+}
+.card h2 {
+  color: #1d2072;
+}
+.card:hover {
+  background-color: $secondary-color; /* Change the background color on hover */
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
